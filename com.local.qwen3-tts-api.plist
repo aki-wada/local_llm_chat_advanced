@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.local.qwen3-tts-api</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/m4_max/Desktop/wada_work/local_llm_chat_advanced/venv/bin/python</string>
+        <string>/Users/m4_max/Desktop/wada_work/local_llm_chat_advanced/tts_api_server.py</string>
+    </array>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PYTORCH_ENABLE_MPS_FALLBACK</key>
+        <string>1</string>
+        <key>HF_HOME</key>
+        <string>/Users/m4_max/Desktop/wada_work/local_llm_chat_advanced/.hf_cache</string>
+        <key>QWEN_TTS_MODEL</key>
+        <string>Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice</string>
+        <key>QWEN_TTS_API_PORT</key>
+        <string>8520</string>
+    </dict>
+
+    <key>WorkingDirectory</key>
+    <string>/Users/m4_max/Desktop/wada_work/local_llm_chat_advanced</string>
+
+    <key>RunAtLoad</key>
+    <true/>
+
+    <key>KeepAlive</key>
+    <false/>
+
+    <key>StandardOutPath</key>
+    <string>/Users/m4_max/Desktop/wada_work/local_llm_chat_advanced/logs/tts-api.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/m4_max/Desktop/wada_work/local_llm_chat_advanced/logs/tts-api-error.log</string>
+</dict>
+</plist>

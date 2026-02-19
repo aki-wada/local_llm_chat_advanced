@@ -1,0 +1,9 @@
+.DS_Store
+*.app
+*.bat
+venv/
+.hf_cache/
+logs/
+__pycache__/
+*.pyc
+test.wav
